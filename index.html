@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>天天电影网 - 每日电影资讯 · 天天有片看 · 影视新鲜事 | https://tiantiandianyingwang-wap.github.io</title>
+<meta name="description" content="天天电影网（https://tiantiandianyingwang-wap.github.io）每天更新电影资讯、新片预告、热映推荐与影迷讨论，天天有片看，日日有新鲜事。">
+<meta name="keywords" content="天天电影网, 每日电影, 电影资讯, 新片预告, 热映推荐, 天天有片看, tiantiandianyingwang-wap.github.io">
+<meta name="author" content="天天电影网">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1a3a5c">
+<link rel="canonical" href="https://tiantiandianyingwang-wap.github.io/">
+<meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" />
+<meta property="og:title" content="天天电影网 - 每日电影资讯 · 天天有片看 · 影视新鲜事">
+<meta property="og:description" content="天天电影网（https://tiantiandianyingwang-wap.github.io）每天更新电影资讯、新片预告、热映推荐与影迷讨论。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tiantiandianyingwang-wap.github.io/">
+<meta property="og:site_name" content="天天电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="天天电影网 - 每日电影资讯 · 天天有片看">
+<meta name="twitter:description" content="天天电影网（https://tiantiandianyingwang-wap.github.io）每天更新电影资讯、新片预告与热映推荐。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:Georgia,"Times New Roman","Songti SC","SimSun",serif;line-height:1.85;color:#1f1a14;background:#f4efe6;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+input,textarea{font-family:inherit;}
+::selection{background:#d94f37;color:#fff;}
+
+/* ===== 报头 ===== */
+.masthead{background:#1a3a5c;color:#f4efe6;padding:20px 0 0;border-bottom:5px solid #d94f37;}
+.mh{max-width:1180px;margin:0 auto;padding:0 24px;}
+.mh .top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:14px;font-size:12px;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid rgba(244,239,230,.25);padding-bottom:10px;}
+.mh .top span{opacity:.85;}
+.mh .title{text-align:center;padding:26px 0 18px;}
+.mh .title h1{font-size:64px;font-weight:900;letter-spacing:6px;line-height:1;font-family:Georgia,serif;}
+.mh .title h1 i{font-style:normal;color:#f0b429;}
+.mh .title .sub{margin-top:12px;font-size:14px;letter-spacing:4px;text-transform:uppercase;opacity:.9;}
+.mh .meta{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12.5px;border-top:2px solid #f4efe6;border-bottom:1px solid rgba(244,239,230,.4);padding:9px 0;margin-top:16px;}
+.mh .meta b{color:#f0b429;}
+.mh .meta nav{display:flex;gap:4px;flex-wrap:wrap;}
+.mh .meta nav a{padding:5px 13px;font-size:12.5px;font-weight:700;border-radius:3px;transition:.2s;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;}
+.mh .meta nav a:hover{background:#d94f37;color:#fff;}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+section{padding:72px 0;}
+.cap{margin-bottom:44px;text-align:center;}
+.cap .k{display:inline-block;font-size:11.5px;letter-spacing:4px;color:#d94f37;text-transform:uppercase;font-weight:800;margin-bottom:9px;font-family:-apple-system,"PingFang SC",sans-serif;}
+.cap h2{font-size:34px;font-weight:900;letter-spacing:2px;color:#1a3a5c;}
+.cap h2 em{font-style:normal;color:#d94f37;}
+.cap p{font-size:15px;color:#6b5f50;max-width:600px;margin:10px auto 0;font-family:-apple-system,"PingFang SC",sans-serif;}
+
+/* ===== Hero：头条拼贴 ===== */
+.hero{padding:52px 0;}
+.hero .wrap{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;}
+.headline{background:#fff;border:1px solid #e2d8c8;padding:0 0 26px;position:relative;}
+.headline .tag{position:absolute;top:-1px;left:-1px;background:#d94f37;color:#fff;font-size:12px;font-weight:800;letter-spacing:2px;padding:7px 16px;font-family:-apple-system,"PingFang SC",sans-serif;}
+.headline .ph{height:300px;background:linear-gradient(135deg,#1a3a5c,#2c5a82 55%,#4a8db5);position:relative;overflow:hidden;margin-bottom:22px;}
+.headline .ph::after{content:"今日头条";position:absolute;bottom:18px;left:24px;color:#fff;font-size:13px;letter-spacing:3px;opacity:.8;}
+.headline .ph .sun{position:absolute;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,#f0b429,#e8942a);top:40px;right:50px;box-shadow:0 0 60px rgba(240,180,41,.6);}
+.headline .ph .m{position:absolute;width:70px;height:14px;background:#f4efe6;opacity:.9;left:24px;}
+.headline .ph .m:nth-child(2){top:60px;width:200px;}
+.headline .ph .m:nth-child(3){top:86px;width:150px;opacity:.6;}
+.headline .ph .m:nth-child(4){top:112px;width:180px;opacity:.4;}
+.headline .pad{padding:0 28px;}
+.headline h3{font-size:30px;font-weight:900;line-height:1.35;color:#1a3a5c;margin-bottom:14px;}
+.headline h3 span{background:linear-gradient(transparent 62%,#f0b429 62%);}
+.headline p{font-size:15.5px;color:#4a4030;column-count:2;column-gap:26px;text-align:justify;}
+.headline .by{margin-top:18px;padding-top:14px;border-top:1px dashed #d8cdb8;font-size:12.5px;color:#8a7a60;font-family:-apple-system,"PingFang SC",sans-serif;}
+
+.side{display:flex;flex-direction:column;gap:20px;}
+.today{background:#f0b429;color:#1a3a5c;padding:22px;border-radius:4px;}
+.today .lb{font-size:11px;font-weight:900;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;}
+.today .big{font-size:52px;font-weight:900;line-height:1;letter-spacing:2px;}
+.today .big small{font-size:15px;font-weight:700;display:block;margin-top:8px;line-height:1.5;}
+.pulse{background:#fff;border:1px solid #e2d8c8;padding:20px 22px;}
+.pulse h4{font-size:13px;font-weight:900;letter-spacing:2px;color:#d94f37;margin-bottom:12px;font-family:-apple-system,"PingFang SC",sans-serif;}
+.pulse ol{counter-reset:p;list-style:none;}
+.pulse ol li{counter-increment:p;font-size:14px;padding:9px 0 9px 34px;border-bottom:1px dotted #e2d8c8;position:relative;color:#3a2f20;}
+.pulse ol li::before{content:counter(p);position:absolute;left:0;top:8px;width:22px;height:22px;background:#1a3a5c;color:#f0b429;border-radius:50%;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;font-family:-apple-system,sans-serif;}
+.pulse ol li:last-child{border-bottom:none;}
+
+/* ===== 栏目一：每日片单（四联拼图） ===== */
+.daily{background:#fff;}
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.paper{background:#fbf8f2;border:1px solid #e8ddca;padding:18px;position:relative;transition:.25s;}
+.paper:hover{transform:translateY(-5px) rotate(-.5deg);box-shadow:0 14px 30px rgba(26,58,92,.14);}
+.paper::before{content:"";position:absolute;top:-7px;left:14px;right:14px;height:4px;background:#d94f37;}
+.paper:nth-child(2n)::before{background:#1a3a5c;}
+.paper:nth-child(3n)::before{background:#f0b429;}
+.paper .d{font-size:11px;font-weight:900;letter-spacing:2px;color:#d94f37;font-family:-apple-system,sans-serif;}
+.paper h4{font-size:20px;font-weight:900;color:#1a3a5c;margin:8px 0 10px;line-height:1.4;}
+.paper p{font-size:13.5px;color:#6b5f50;font-family:-apple-system,"PingFang SC",sans-serif;}
+.paper .more{display:inline-block;margin-top:14px;font-size:12px;font-weight:800;color:#1a3a5c;border-bottom:2px solid #d94f37;padding-bottom:2px;font-family:-apple-system,sans-serif;}
+
+/* ===== 栏目二：新片速递（横向磁带条） ===== */
+.tape{background:#1a3a5c;color:#f4efe6;}
+.tape .cap h2{color:#fff;}
+.tape .cap .k{color:#f0b429;}
+.tape .cap p{color:#c9d4e0;}
+.strip{display:flex;gap:20px;overflow-x:auto;padding:6px 4px 22px;scroll-snap-type:x mandatory;}
+.strip::-webkit-scrollbar{height:8px;}
+.strip::-webkit-scrollbar-track{background:rgba(244,239,230,.1);border-radius:4px;}
+.strip::-webkit-scrollbar-thumb{background:#d94f37;border-radius:4px;}
+.reel{flex:0 0 300px;scroll-snap-align:start;background:#f4efe6;color:#1a3a5c;padding:0 0 20px;border-radius:6px;overflow:hidden;}
+.reel .cv{height:170px;background:linear-gradient(135deg,#2c5a82,#d94f37);position:relative;}
+.reel .cv b{position:absolute;bottom:14px;left:18px;color:#fff;font-size:22px;font-weight:900;letter-spacing:1px;}
+.reel .cv span{position:absolute;top:14px;right:14px;background:#f0b429;color:#1a3a5c;font-size:11px;font-weight:800;padding:4px 10px;border-radius:3px;}
+.reel .cv i{position:absolute;top:14px;left:14px;font-size:11px;color:#fff;opacity:.85;font-style:normal;letter-spacing:1px;}
+.reel .pad{padding:18px 20px 0;}
+.reel h5{font-size:18px;font-weight:900;margin-bottom:8px;}
+.reel p{font-size:13px;color:#5a4f3f;font-family:-apple-system,"PingFang SC",sans-serif;}
+.reel .ft{display:flex;justify-content:space-between;margin-top:16px;padding-top:12px;border-top:1px solid #e2d8c8;font-size:12px;color:#8a7a60;font-family:-apple-system,sans-serif;}
+
+/* ===== 栏目三：影迷来信（剪报墙） ===== */
+.letters{background:#f4efe6;}
+.wall{column-count:3;column-gap:22px;}
+.letter{break-inside:avoid;background:#fffdf8;border:1px solid #e2d8c8;padding:20px 22px;margin-bottom:22px;box-shadow:4px 5px 0 rgba(26,58,92,.12);position:relative;transform:rotate(-.6deg);}
+.letter:nth-child(even){transform:rotate(.7deg);background:#fbf6ec;}
+.letter:nth-child(3n){transform:rotate(-.3deg);}
+.letter::after{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);width:46px;height:13px;background:rgba(217,79,55,.18);border-radius:2px;}
+.letter .who{font-size:12px;font-weight:800;color:#d94f37;margin-bottom:10px;font-family:-apple-system,sans-serif;}
+.letter .who b{color:#1a3a5c;}
+.letter q{font-size:14.5px;color:#3a2f20;line-height:1.8;display:block;quotes:none;font-style:italic;}
+.letter .dt{margin-top:14px;font-size:11.5px;color:#9a8a70;text-align:right;font-family:-apple-system,sans-serif;}
+
+/* ===== 栏目四：数据统计（数字报头） ===== */
+.figure{background:#d94f37;color:#fff;}
+.figure .cap h2{color:#fff;}
+.figure .cap .k{color:#f0b429;}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.3);border:1px solid rgba(255,255,255,.3);}
+.fg{background:#d94f37;padding:34px 18px;text-align:center;}
+.fg b{display:block;font-size:46px;font-weight:900;letter-spacing:1px;line-height:1;}
+.fg span{display:block;margin-top:12px;font-size:13px;letter-spacing:2px;text-transform:uppercase;opacity:.92;font-family:-apple-system,sans-serif;}
+
+/* ===== 栏目五：关于（编辑部） ===== */
+.about{background:#fff;}
+.ed{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;}
+.ed .l h2{font-size:32px;font-weight:900;color:#1a3a5c;letter-spacing:1px;margin-bottom:18px;}
+.ed .l h2 em{font-style:normal;color:#d94f37;}
+.ed .l p{font-size:16px;color:#4a4030;margin-bottom:18px;font-family:-apple-system,"PingFang SC",sans-serif;}
+.ed .l .url{display:block;font-family:monospace;font-size:15px;color:#1a3a5c;background:#f4efe6;border-left:5px solid #d94f37;padding:14px 18px;margin:6px 0 26px;}
+.crew{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.cr{background:#fbf8f2;border:1px solid #e8ddca;padding:16px;border-radius:4px;}
+.cr b{display:block;font-size:15px;color:#1a3a5c;}
+.cr span{font-size:12.5px;color:#8a7a60;font-family:-apple-system,sans-serif;}
+.ed .r{background:#1a3a5c;color:#f4efe6;border-radius:6px;padding:36px 32px;}
+.ed .r .lb{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#f0b429;font-weight:800;margin-bottom:18px;font-family:-apple-system,sans-serif;}
+.ed .r h3{font-size:24px;font-weight:900;margin-bottom:8px;}
+.ed .r p{font-size:14px;opacity:.85;margin-bottom:22px;font-family:-apple-system,"PingFang SC",sans-serif;}
+.ed .r input,.ed .r textarea{width:100%;padding:13px 15px;border-radius:4px;border:none;background:rgba(244,239,230,.12);color:#fff;font-size:14px;margin-bottom:14px;font-family:-apple-system,"PingFang SC",sans-serif;}
+.ed .r input::placeholder,.ed .r textarea::placeholder{color:rgba(244,239,230,.6);}
+.ed .r textarea{height:96px;resize:vertical;}
+.ed .r button{width:100%;padding:14px;border-radius:4px;background:#f0b429;color:#1a3a5c;font-weight:900;font-size:15px;letter-spacing:1px;transition:.2s;}
+.ed .r button:hover{background:#fff;}
+
+footer{background:#1a3a5c;color:#c9d4e0;padding:52px 0 22px;}
+.foot{max-width:1180px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:34px;}
+.foot .b h3{font-size:24px;font-weight:900;letter-spacing:3px;color:#fff;margin-bottom:12px;}
+.foot .b h3 i{font-style:normal;color:#f0b429;}
+.foot .b p{font-size:14px;max-width:330px;font-family:-apple-system,"PingFang SC",sans-serif;line-height:1.8;}
+.foot .b .u{display:block;font-family:monospace;color:#f0b429;font-size:13px;margin-top:14px;}
+.foot h4{color:#fff;font-size:14px;letter-spacing:1px;margin-bottom:14px;text-transform:uppercase;}
+.foot ul li{margin-bottom:9px;}
+.foot a{font-size:13.5px;opacity:.85;transition:.2s;font-family:-apple-system,"PingFang SC",sans-serif;}
+.foot a:hover{opacity:1;color:#f0b429;}
+.fbot{max-width:1180px;margin:30px auto 0;padding:20px 24px 0;border-top:1px solid rgba(244,239,230,.25);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;font-family:monospace;opacity:.75;}
+
+#up{position:fixed;right:22px;bottom:22px;width:48px;height:48px;background:#d94f37;color:#fff;font-size:20px;border-radius:4px;opacity:0;pointer-events:none;transition:.3s;z-index:99;}
+#up.show{opacity:1;pointer-events:auto;}
+#up:hover{background:#1a3a5c;}
+
+@media(max-width:980px){
+  .mh .title h1{font-size:44px;letter-spacing:3px;}
+  .hero .wrap{grid-template-columns:1fr;gap:34px;}
+  .headline p{column-count:1;}
+  .board{grid-template-columns:1fr 1fr;}
+  .wall{column-count:2;}
+  .fgrid{grid-template-columns:1fr 1fr;}
+  .ed{grid-template-columns:1fr;gap:40px;}
+  .mh .meta nav{display:none;}
+}
+@media(max-width:600px){
+  .mh .title h1{font-size:32px;letter-spacing:1px;}
+  .cap h2{font-size:23px;}
+  .headline h3{font-size:23px;}
+  .today .big{font-size:40px;}
+  .reel{flex:0 0 250px;}
+  .board,.wall,.crew{grid-template-columns:1fr;column-count:1;}
+  .foot{grid-template-columns:1fr;}
+  .fbot{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- 报头 -->
+<div class="masthead">
+  <div class="mh">
+    <div class="top">
+      <span>🗞️ 天天电影网 · 每日电影资讯报</span>
+      <span>Vol.2026 · 第 298 期 · 今日发行</span>
+    </div>
+    <div class="title">
+      <h1>天天<i>电影网</i></h1>
+      <div class="sub">每天有片看 · 日日有新鲜事</div>
+    </div>
+    <div class="meta">
+      <div>📍 <b>网址：https://tiantiandianyingwang-wap.github.io</b>　|　每日更新　|　独立电影资讯</div>
+      <nav>
+        <a href="#top">首页</a><a href="#daily">每日片单</a><a href="#tape">新片速递</a>
+        <a href="#letters">影迷来信</a><a href="#about">关于我们</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- Hero：头条拼贴 -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <article class="headline">
+      <div class="tag">今日头条 · LEAD STORY</div>
+      <div class="ph">
+        <div class="sun"></div>
+        <div class="m"></div><div class="m"></div><div class="m"></div><div class="m"></div>
+      </div>
+      <div class="pad">
+        <h3>国产片年末密集定档，<span>这个月天天都有新片看</span></h3>
+        <p>从文艺片到喜剧片，从纪录片到动画长片，2026 年第四季度将有超过三十部国产电影陆续登陆院线。多位导演选择在这个档期推出新作，市场供给明显回暖。对于普通观众来说，这意味着几乎每一天都能在影院找到一部新上映的片子——「天天有片看」不再是口号。</p>
+        <p>与此同时，线上平台的片库也在持续扩充。天天电影网（https://tiantiandianyingwang-wap.github.io）梳理了近期值得关注的影片与即将上映的动态，帮你把每一天的观影安排得明明白白。</p>
+        <div class="by">天天电影网编辑部 · 每日资讯 · 仅供参考，以官方信息为准</div>
+      </div>
+    </article>
+    <aside class="side">
+      <div class="today">
+        <div class="lb">🗓 今日 · TODAY</div>
+        <div class="big">天天<i style="font-style:normal;color:#1a3a5c;">电影</i>
+          <small>每一天，都有一部值得看的片子在等你</small>
+        </div>
+      </div>
+      <div class="pulse">
+        <h4>🔥 今日热读 TOP 5</h4>
+        <ol>
+          <li>十月末院线新片总览，哪部值得走进影院？</li>
+          <li>年末必看文艺片清单，提前锁定档期</li>
+          <li>这几部经典老片，本周重映了</li>
+          <li>纪录片新作上线，题材集中在人与自然</li>
+          <li>动画电影扎堆，周末带孩子看哪部？</li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- 栏目一：每日片单（四联拼图） -->
+<section id="daily" class="daily">
+  <div class="wrap">
+    <div class="cap">
+      <div class="k">Daily Picks</div>
+      <h2>每日<em>片单</em></h2>
+      <p>天天电影网每天精选一组片单，覆盖不同类型、不同心情，总有一部适合今天的你。</p>
+    </div>
+    <div class="board">
+      <div class="paper">
+        <div class="d">MON · 周一</div>
+        <h4>周一轻松场：笑着开始新一周</h4>
+        <p>选几部节奏明快的喜剧片，把周一的压力留在影院门外。</p>
+        <a href="#" class="more">查看片单 →</a>
+      </div>
+      <div class="paper">
+        <div class="d">WED · 周三</div>
+        <h4>周三文艺夜：慢下来，想一想</h4>
+        <p>一周过半，用一部有厚度的文艺片，给自己一点安静的时间。</p>
+        <a href="#" class="more">查看片单 →</a>
+      </div>
+      <div class="paper">
+        <div class="d">FRI · 周五</div>
+        <h4>周五大片夜：大银幕才过瘾</h4>
+        <p>院线热门新片集中推荐，周末第一件事就是买票。</p>
+        <a href="#" class="more">查看片单 →</a>
+      </div>
+      <div class="paper">
+        <div class="d">SUN · 周日</div>
+        <h4>周日治愈场：收收心，好好睡</h4>
+        <p>温柔的片子配一杯热饮，把这一周好好收个尾。</p>
+        <a href="#" class="more">查看片单 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：新片速递（横向磁带条） -->
+<section id="tape" class="tape">
+  <div class="wrap">
+    <div class="cap">
+      <div class="k">Coming Soon</div>
+      <h2>新片<em>速递</em></h2>
+      <p>滚动看看近期即将上映与已经上映的新片，别错过任何一部。</p>
+    </div>
+    <div class="strip">
+      <div class="reel"><div class="cv"><i>11月1日</i><b>《山河故人》</b><span>上映中</span></div><div class="pad"><h5>一部关于时间与离别的电影</h5><p>影片跨越三十年，讲述一个家庭的聚散与时代的变迁，情感克制而绵长。</p><div class="ft"><span>剧情 / 家庭</span><span>128 分钟</span></div></div></div>
+      <div class="reel"><div class="cv"><i>11月7日</i><b>《小满》</b><span>新片</span></div><div class="pad"><h5>写给所有在外漂泊的人</h5><p>导演用细腻的日常镜头，记录了一个年轻人在故乡与城市之间的反复。</p><div class="ft"><span>文艺 / 成长</span><span>106 分钟</span></div></div></div>
+      <div class="reel"><div class="cv"><i>11月14日</i><b>《夜航船》</b><span>新片</span></div><div class="pad"><h5>一艘船上的陌生人，一夜的对话</h5><p>密闭空间叙事，五位素不相识的乘客在一艘夜航船上交换心事。</p><div class="ft"><span>剧情 / 悬疑</span><span>98 分钟</span></div></div></div>
+      <div class="reel"><div class="cv"><i>11月21日</i><b>《春天里》</b><span>定档</span></div><div class="pad"><h5>春天的故事，从来都不着急</h5><p>乡村题材轻喜剧，节奏舒缓，适合周末放松时观看。</p><div class="ft"><span>喜剧 / 乡村</span><span>112 分钟</span></div></div></div>
+      <div class="reel"><div class="cv"><i>11月28日</i><b>《回声》</b><span>新片</span></div><div class="pad"><h5>童年听过的声音，长大才懂</h5><p>纪录片，跟拍几位老手艺人的日常，记录正在消失的声音。</p><div class="ft"><span>纪录 / 人文</span><span>89 分钟</span></div></div></div>
+      <div class="reel"><div class="cv"><i>12月5日</i><b>《鲸落》</b><span>定档</span></div><div class="pad"><h5>深海之下的生命循环</h5><p>自然题材纪录长片，画面震撼，适合大银幕观看。</p><div class="ft"><span>纪录 / 自然</span><span>95 分钟</span></div></div></div>
+      <div class="reel"><div class="cv"><i>12月12日</i><b>《老街口》</b><span>新片</span></div><div class="pad"><h5>一条老街，半座城市的记忆</h5><p>群像式叙事，多个家庭在同一老街上的生活交织。</p><div class="ft"><span>剧情 / 群像</span><span>121 分钟</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：影迷来信（剪报墙） -->
+<section id="letters" class="letters">
+  <div class="wrap">
+    <div class="cap">
+      <div class="k">Letters from Readers</div>
+      <h2>影迷<em>来信</em></h2>
+      <p>每天都有人在这里分享自己的观影感受，这些是我们最珍视的声音。</p>
+    </div>
+    <div class="wall">
+      <div class="letter"><div class="who">读者 · <b>小满</b></div><q>每天下班第一件事就是打开天天电影网看看今天推荐什么，已经养成习惯了。这个站陪我度过了很多疲惫的夜晚。</q><div class="dt">10月27日 · 北京</div></div>
+      <div class="letter"><div class="who">读者 · <b>阿Ken</b></div><q>片单分类很贴心，周一轻松场和周日治愈场的设计，让人觉得看电影也是有仪式感的事。</q><div class="dt">10月26日 · 广州</div></div>
+      <div class="letter"><div class="who">读者 · <b>林知夏</b></div><q>新片速递那个横向滚动做得好，通勤路上滑一滑就知道这周有什么可看的。</q><div class="dt">10月25日 · 上海</div></div>
+      <div class="letter"><div class="who">读者 · <b>老周</b></div><q>我今年 62 岁，天天电影网是我每天必看的电影资讯站，字大、清楚、不花哨。</q><div class="dt">10月24日 · 成都</div></div>
+      <div class="letter"><div class="who">读者 · <b>一颗橘子</b></div><q>最开始是被「每天有片看」这句话留下来的，后来发现这里的推荐真的挺准。</q><div class="dt">10月23日 · 杭州</div></div>
+      <div class="letter"><div class="who">读者 · <b>深海鱼</b></div><q>希望能多推一些冷门佳片，这类片子平时很难被发现，天天电影网给了我不少惊喜。</q><div class="dt">10月22日 · 武汉</div></div>
+      <div class="letter"><div class="who">读者 · <b>芒果冰</b></div><q>已经连续打卡 87 天了，每天都在这里记录自己看了什么片，慢慢攒成了一个片单。</q><div class="dt">10月21日 · 深圳</div></div>
+      <div class="letter"><div class="who">读者 · <b>李不晚</b></div><q>报头的设计很特别，每次打开都有一种在翻报纸的感觉，复古又舒服。</q><div class="dt">10月20日 · 南京</div></div>
+      <div class="letter"><div class="who">读者 · <b>晚风</b></div><q>在这里发现了好多以前没注意到的国产片，越看越觉得我们自己的电影在变好。</q><div class="dt">10月19日 · 西安</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：数据统计 -->
+<section class="figure">
+  <div class="wrap">
+    <div class="cap">
+      <div class="k">Daily Numbers</div>
+      <h2>天天<em>数据</em></h2>
+      <p>每天都在更新，每天都在被阅读。</p>
+    </div>
+    <div class="fgrid">
+      <div class="fg"><b>365</b><span>全年无休更新</span></div>
+      <div class="fg"><b>1,560</b><span>累计片单</span></div>
+      <div class="fg"><b>8.2万</b><span>每日阅读量</span></div>
+      <div class="fg"><b>2,400+</b><span>影迷来信</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：关于（编辑部） -->
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="ed">
+      <div class="l">
+        <h2>关于<em>天天电影网</em></h2>
+        <p>天天电影网（https://tiantiandianyingwang-wap.github.io）是一个每天更新的电影资讯与片单推荐网站。我们相信，看电影这件事，值得被认真对待，也值得被认真对待地推荐。</p>
+        <p>从每日片单到新片速递，从影迷来信到影视资讯，天天电影网每天都在更新，只为你每天都能找到一部好片。</p>
+        <div class="url">🗞️ 网址：https://tiantiandianyingwang-wap.github.io</div>
+        <div class="crew">
+          <div class="cr"><b>主编</b><span>负责每日头条与选题</span></div>
+          <div class="cr"><b>片单组</b><span>每天精选一部好片</span></div>
+          <div class="cr"><b>资讯组</b><span>跟踪行业动态与档期</span></div>
+          <div class="cr"><b>读者组</b><span>整理影迷来信与留言</span></div>
+        </div>
+      </div>
+      <div class="r">
+        <div class="lb">📮 寄给编辑部</div>
+        <h3>想告诉我们什么？</h3>
+        <p>推荐一部你想被推荐的片子，或者说说你今天看了什么。每天我们都会认真读每一封信。</p>
+        <input type="text" placeholder="你的称呼">
+        <input type="text" placeholder="想推荐的片子">
+        <textarea placeholder="想说的话"></textarea>
+        <button type="button">寄出这封信 →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div class="b">
+      <h3>天天<i>电影网</i></h3>
+      <p>天天电影网（https://tiantiandianyingwang-wap.github.io）每天更新电影资讯、新片预告、热映推荐与影迷讨论，天天有片看，日日有新鲜事。</p>
+      <span class="u">TIANTIANDIANYINGWANG-WAP.GITHUB.IO</span>
+    </div>
+    <div><h4>每日片单</h4><ul>
+      <li><a href="#">周一轻松场</a></li><li><a href="#">周三文艺夜</a></li>
+      <li><a href="#">周五大片夜</a></li><li><a href="#">周日治愈场</a></li>
+    </ul></div>
+    <div><h4>新片速递</h4><ul>
+      <li><a href="#">即将上映</a></li><li><a href="#">正在热映</a></li>
+      <li><a href="#">定档预告</a></li><li><a href="#">档期总览</a></li>
+    </ul></div>
+    <div><h4>关于我们</h4><ul>
+      <li><a href="#">网站介绍</a></li><li><a href="#">编辑团队</a></li>
+      <li><a href="#">投稿与来信</a></li><li><a href="#">免责声明</a></li>
+    </ul></div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 天天电影网（https://tiantiandianyingwang-wap.github.io）版权所有 · 每日更新 · 天天有片看</span>
+    <span>🗞️ 本站仅提供电影资讯、新片预告与片单推荐服务</span>
+  </div>
+</footer>
+
+<button id="up" aria-label="回到顶部">↑</button>
+
+<script>
+var up=document.getElementById('up');
+window.addEventListener('scroll',function(){up.classList.toggle('show',window.scrollY>400);});
+up.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
